@@ -1,0 +1,99 @@
+.tools {
+    position: fixed;
+    bottom: 43px;
+    right: 40px;
+    z-index: 20;
+    text-align: center;
+    line-height: 1;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+    border-radius: 4px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.4), inset 0px 1px rgba(255, 255, 255, 0.11);
+  }
+  .tools:hover {
+    background: #000;
+  }
+  .tools.show {
+    opacity: 1;
+  }
+  .tools .tools-list li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 18px;
+  }
+  .tools .tools-list li:hover {
+    background: #222222;
+  }
+  .tools .tools-list li:first-child {
+    border-radius: 4px 4px 0 0;
+  }
+  .tools .tools-list li:last-child {
+    border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+  }
+  .tools .tools-list li a {
+    padding: 15px 13px;
+    display: block;
+    color: #fff;
+    position: relative;
+  }
+  .tools .tools-list li a span {
+    position: absolute;
+    right: 30px;
+    top: 50%;
+    display: block;
+    padding: 9px 14px;
+    background-color: black;
+    transform: translate(0, -50%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.25);
+    font-size: 17px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .tools .tools-list li a span:after {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    /* To the left of the tooltip */
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent black;
+  }
+  .tools .tools-list li a:hover span {
+    opacity: 1;
+    right: 55px;
+    visibility: visible;
+  }
+  .tools .tools-list li a .fa-phone-volume {
+    transform: rotate(-45deg);
+  }
+  
+
+  /* <div class="tools">
+      <ul class="tools-list">
+          <li class="openForm">
+              <a href="#contact_form" title="fill a form"><i class="fas fa-envelope"></i></a>
+          </li>
+          <li>
+              <a href="tel:01127384423" title="call us"><i class="fas fa-phone-volume"></i> <span>0421 667 087</span> </a>
+          </li>
+          <li><a href="#header" id="backtotop" title="back to top" class="show"><i class="fas fa-chevron-up"></i></a></li>
+      </ul>
+  </div> */
